@@ -1,0 +1,46 @@
+<head>
+    <title>{{meta_title}}</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}">
+
+    {{!-- Custom Styles --}}
+    <link rel="stylesheet" href="{{asset "css/style.css"}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet"> 
+
+
+    {{!-- Dynamic header content for SEO, meta tags, code injection etc --}}
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+
+    {{!-- Navigation bar --}}
+    {{"navigation"}}
+    {{!-- End Navbar --}}
+
+    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+    <a href="/about" id="about-button">About</a>
+    {{{body}}}
+
+    {{!-- Footer content goes here --}}
+    {{!-- End of footer --}}
+
+    {{!-- Dynamic footer content from code injection etc --}}
+    {{ghost_foot}}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery Slim first, then Popper.js, then Bootstrap JS -->
+    <script src="{{asset "js/jquery.min.js"}}"></script>
+    <script src="{{asset "js/popper.min.js"}}"></script>
+    <script src="{{asset "js/bootstrap.min.js"}}"></script>
+    <script src="{{asset "js/background.js"}}"></script>
+    
+
+</body>
+
+</html>
